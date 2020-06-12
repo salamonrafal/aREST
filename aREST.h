@@ -437,8 +437,6 @@ void addToBufferF(const __FlashStringHelper *toAdd){
     Serial.println(toAdd);
   }
 
-  uint8_t idx = 0;
-
   PGM_P p = reinterpret_cast<PGM_P>(toAdd);
 
   for ( unsigned char c = pgm_read_byte(p++);
